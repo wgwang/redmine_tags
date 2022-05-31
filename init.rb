@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-require 'redmine_tags'
+base_url = File.dirname(__FILE__)
+
+require base_url + '/lib/redmine_tags'
 
 ActiveSupport::Reloader.to_prepare do
   paths = '/lib/redmine_tags/{patches/*_patch,hooks/*_hook}.rb'
